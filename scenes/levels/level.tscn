@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://s0dsj4ff36eq" path="res://icon.svg" id="1_c5a6b"]
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_nev7l"]
-[ext_resource type="Script" path="res://scenes/scripts/Logo.gd" id="2_7sf2u"]
+[ext_resource type="Script" path="res://scripts/Logo.gd" id="2_7sf2u"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_nev7l")
