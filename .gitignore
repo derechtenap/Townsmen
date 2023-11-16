@@ -18,3 +18,9 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# NOTE: The following lines should be removed later!
+# These folders currently only contain placeholder images and 
+# audio files.
+audio/
+graphics/
