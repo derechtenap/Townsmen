@@ -1,10 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://brwrday5ptgjp"]
+[gd_scene load_steps=4 format=3 uid="uid://brwrday5ptgjp"]
 
 [ext_resource type="Texture2D" uid="uid://btwgxwrtnmhhc" path="res://graphics/player/player.png" id="1_6owgk"]
 [ext_resource type="Script" path="res://scenes/player/heroPlayer.gd" id="1_lfgus"]
 
-[node name="HeroPlayer" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_7q8f2"]
+radius = 66.0
+
+[node name="HeroPlayer" type="CharacterBody2D"]
 script = ExtResource("1_lfgus")
 
 [node name="PlayerImage" type="Sprite2D" parent="."]
 texture = ExtResource("1_6owgk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 40)
+shape = SubResource("CircleShape2D_7q8f2")
