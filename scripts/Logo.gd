@@ -16,6 +16,6 @@ func _ready():
 	# OR: scale = Vector2(test_scale, test_scale)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
+func _process(delta):
 	# Move logo to the right window side
-	position.x += 1
+	position.x += test_scale * delta
